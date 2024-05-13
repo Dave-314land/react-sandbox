@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        < HelloWorld />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -19,6 +20,12 @@ function App() {
         </a>
       </header>
     </div>
+  );
+}
+
+function HelloWorld() {
+  return (
+    <h1>Hello World!</h1>
   );
 }
 
