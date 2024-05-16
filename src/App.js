@@ -6,7 +6,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        < HelloWorld />
+        < HelloWorld name="Dave" greeting="Yo" />
+        < HelloWorld name="World" greeting="What up" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -23,9 +24,9 @@ function App() {
   );
 }
 
-function HelloWorld() {
+function HelloWorld({ name = "World", greeting = "Hello" }) {
   return (
-    <h1>Hello World!</h1>
+    <h1>{greeting} {name}  </h1>
   );
 }
 
